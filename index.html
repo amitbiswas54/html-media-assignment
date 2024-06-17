@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDPS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+    <section class="heroSec">
+        <div class="container">
+            <header>
+                <div class="navBar">
+                    <div><a href="#"><img src="assets/img/website-logo.png" alt="idfc"></a></div>
+                    <div class="menuLink mobileOff">
+                           <a href="">Retail</a>
+                           <a href="">SME</a>
+                           <a href="">Corporate</a>
+                           <a href="">About Us</a>
+                           <a href="">Corvid 19</a>
+                           <a href="">campagins</a>
+                    </div>
+
+                    <div class="topRight">
+                        <a href="#" class="btnOutLine mobileOff"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" class="btn mobileOff">Contribute</a>
+                        <button class="btn mobileOn" onclick="mobileMenuOn();"><i class="fa-solid fa-bars"></i> Menu</button>
+
+                    </div>
+                    
+                </div>
+
+                <div  id="mobilMenu" style="display: none;"  >
+                   <div class="dFlex"><a href="#"><img src="assets/img/website-logo.png" alt="idfc"></a> 
+                    <a href="#" onclick="closeBtn();" class="closeBtn"><i class="fa-solid fa-xmark"></i></a>    
+                </div>
+                   <div class="menuLink ">
+                    <a href="">Retail</a>
+                    <a href="">SME</a>
+                    <a href="">Corporate</a>
+                    <a href="">About Us</a>
+                    <a href="">Corvid 19</a>
+                    <a href="">campagins</a>
+                    <a href="">Contribution</a>
+             </div>
+                </div>
+
+               
+            </header>
+            </div>  
+            <div class="container-fluid">    
+            <div class="heroWrap">
+                <div class="heroLeft">
+                    <h2>Chase Your <br>Dream with us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, esse?</p>
+                    <div class="dFlexButton">
+                        <a href="#" class="btn">Apply Online</a>
+                        <a href="#" class="btnOutline">Loan Calculator</a>
+                    </div>
+                    <ul>
+                        <li><a href="#"><img src="assets/img/phone.png" alt="" class="padEnd"> | <span>1650</span> |</a></li>
+                        <li><a href="#"><img src="assets/img/facebook.png" alt=""> </a></li>
+                        <li><a href="#"><img src="assets/img/youtube.png" alt=""> </a></li>
+                        <li><a href="#"><img src="assets/img/linkedin.png" alt=""> </a></li>
+                        <li><a href="#"><img src="assets/img/instagram.png" alt=""> </a></li>
+                    </ul>
+                </div>
+                <div class="heroRight">
+                    <a href="#" class="carloan"><img src="assets/img/car.png" alt="">Car loan</a>
+                    <a href="#" class="homeloan"><img src="assets/img/House.png" alt="">Home loan</a>
+                    <img src="assets/img/hero-image.png" alt="IDPS"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+      let mobileMenu =  document.getElementById("mobilMenu");
+      function mobileMenuOn (){
+        mobileMenu.style.display="block";
+      }
+
+      function closeBtn (){
+        mobileMenu.style.display="none";
+      }
+
+    </script>
+</body>
+</html>
